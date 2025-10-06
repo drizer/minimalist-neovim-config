@@ -51,6 +51,7 @@ require "nvim-treesitter.configs".setup({
 require "oil".setup()
 vim.keymap.set('n', '<leader>e', ":Oil<CR>")
 
+require "mason".setup()
 vim.lsp.enable({ 'lua_ls', 'clangd', 'rust_analyzer' })
 vim.keymap.set('n', '<leader>lf', vim.lsp.buf.format)
 
